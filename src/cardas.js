@@ -1,19 +1,19 @@
 import React from 'react';
 import Card from './Card';
 
-const Cardassembler = ({ user }) => {
+const Cardassembler = ({ robots }) => {
     
 
     return (
         <div>
             {
-                user.map((x,i) => {
+                robots.map((x,i) => {
                     return (
                         <Card 
                             key = {i} 
-                            id={user[i].id} 
-                            name={user[i].name} 
-                            email={user[i].email}
+                            id={robots[i].id} 
+                            name={robots[i].name} 
+                            email={robots[i].email}
                             />
                     );
                 })
